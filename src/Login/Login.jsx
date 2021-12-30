@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./login.css";
 const Login = () => {
-  const [Fuck, setFuck] = useState("/");
+  const [Link, setLink] = useState("/");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [emailErr, setEmailErr] = useState(false);
@@ -25,9 +25,9 @@ const Login = () => {
     }
   };
   const redirect = () => {
-    if (password === "123") {
+    if (password === "SmartServTest@123") {
       console.log("running");
-      setFuck("/final");
+      setLink("/final");
       return true;
     } else {
       return false;
@@ -61,7 +61,7 @@ const Login = () => {
               }}
             />
             {/* <input type="submit" value="Login" /> */}
-            <NavLink to={Fuck}>
+            <NavLink to={Link}>
               {/* <button
                 className="btn"
                 onClick={(e) => {
